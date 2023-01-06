@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+.hidden {
+  display: none;
+}
+
+body,
+html {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+a {
+  text-decoration:none;
+  color:inherit;
+}
+html {
+  background: #333333;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  background-size: cover;
+  background-position: center center;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+section {
+
+  /* align-items: center;
+  flex-direction: column;
+  min-width: 500px; */
+  
+}
+
+.greetingText {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.localdate {
+  font-size: 3em;
+}
+.localtime {
+  font-size: 10em;
+}
+
+
+
+.leftmenu{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin:15px;
+}
+
+
+.center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin:15px;
+  height: 100vh;
+}
+
+.rightmenu{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+  padding:15px;
+  padding-bottom: 50px;
+}
+
+.rightmenu div:first-child{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+input {
+    background: none;
+    appearance: none;
+    border: 0;
+    font-size: 22px;
+    color: white;
+    border-bottom: 2px solid white;
+  }
+  
+  input::placeholder {
+    color: white;
+  }
+  
+  input:focus,
+  input:active {
+    outline: none;
+  }
+
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  ul {
+    margin-top: 5px;
+  }
+
+  
+.center .name__input {
+    appearance: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 36px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+}

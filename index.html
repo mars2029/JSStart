@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>test</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    </link>
+</head>
+
+<body>
+    <section class="leftmenu">
+        <form id="todoForm">
+            <input type="text" placeholder="Today's Todo List" />
+        </form>
+        <ul id="todoList">
+        </ul>
+    </section>
+
+    <section class="center">
+        <span >
+            <i id="weathericon"></i>
+            <span id="localdate" class="localdate"></span>
+        </span>
+
+        <span id="localtime" class="localtime"></span>
+        <form id="submitform" class="hidden">
+            <input type="text" name="username" placeholder="Type your name here?" class="name__input" />
+        </form>
+        <h1 id="greetingText" class="hidden greetingText"></h1>
+        <div id="currencyInfo"><span id="currencyamt"></span></div>
+    </section>
+
+    <section class="rightmenu">
+        <div>
+            <h3><a href="https://mail.google.com" target="_blank"> GMAIL |</a></h3>
+            <h3><a href="https://map.google.com" target="_blank"> MAP |</a></h3>
+            <h3><a href="https://naver.com" target="_blank"> Naver |</a></h3>
+            <br />
+            <h3><a href="https://music.youtube.com/" target="_blank"> Music |</a></h3>
+            <h3><a href="https://music.youtube.com/" target="_blank"> Youtube |</a></h3>
+        </div>
+        <div>
+            <span>
+                <i id="weatherdetailicon"></i><span id="weatherdata"></span>
+            </span>
+        </div>
+    </section>
+
+</body>
+<script src="./js/greetings.js"></script>
+<script src="./js/clock.js"></script>
+<script src="./js/background.js"></script>
+<script src="./js/todo.js"></script>
+<script src="./js/weather.js"></script>
+<script src="./js/currencies.js"></script>
+
+</html>
